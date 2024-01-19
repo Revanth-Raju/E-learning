@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress bar</title>
+
+    <link rel="icon" type="image/x-icon" href="../JSAssets/group.png" />
+
+    <link rel="stylesheet" href="style2.css" />
+
+    <!-- ===== Google fonts ===== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300&family=IBM+Plex+Mono:wght@300;400&family=Montserrat:wght@200;300;400;500;600&family=Nova+Square&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300&family=IBM+Plex+Mono:wght@300;400&family=Montserrat:wght@200;300;400;500;600&family=Nova+Square&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== Box icons link ===== -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../JSAssets/Lingvo logo.png" alt="" />
+      </div>
+
+      <div class="address">
+        <div class="location">
+          <i class="bx bxs-navigation" style="color: #efac05"></i>
+          <!-- <img src="../JSAssets/placeholder.png" alt="" width="20px"> -->
+          <span>9 valley St. Brooklyn, NY 11203 </span>
+        </div>
+
+        <div class="call">
+          <i class="bx bxs-phone" style="color: #efac05"></i>
+          <!-- <img src="../JSAssets/telephone.png" alt="" width="20px"> -->
+          <span>1-800-346-6277</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== Hero section ===== -->
+
+    <div class="heroSection">
+      <div class="heroimg">
+        <img src="../JSAssets/img2 (2).jpg" alt="" />
+      </div>
+
+      <div class="menu" onclick="burger(this)">
+        <div class="burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <p>Menu</p>
+
+        <div class="navLinks">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Typography</a>
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="heroContent">
+        <p>
+          <q>Our language center offers group and personal lessons in English
+            and other modern languages for all ages and levels of knowledge.</q>
+        </p>
+        <p>IMPROVE YOUR <span>ENGLISH</span> SKILLS</p>
+      </div>
+    </div>
+
+    <div class="chooseUs">
+      <div class="chooseHeading">
+        <p>WHY CHOOSE US</p>
+      </div>
+
+      <!-- <div class="icon"><i class='bx bx-check-square'></i></div> -->
+
+      <button class="accordian">Quick Results</button>
+      <div class="panel">
+        <p>Get quick and guaranteed results with the best teachers.</p>
+      </div>
+
+      <!-- <div class="icon1"><i class='bx bxs-badge-dollar'></i></div> -->
+
+      <button class="accordian">Save Money</button>
+      <div class="panel">
+        <p>You can save a lot of money on our lessons & resources.</p>
+      </div>
+
+      <!-- <div class="icon2"><i class='bx bx-chat'></i></div> -->
+
+      <button class="accordian">Get Support</button>
+      <div class="panel">
+        <p>Our staff and teachers are always ready to help you.</p>
+      </div>
+    </div>
+
+    <div class="rangebar">
+        <h2>Track your progress here</h2>
+        <div class="radialProgress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+       <input type="range" name="rangeBar" min="0" max="100" value="0">
+    </div>
+
+    <footer class="footer"> 
+        <div class="footerLeft">
+          <img src="../JSAssets/Lingvo logo.png" alt="" />
+          <p>10000+ Satisfied Students</p>
+          <p>
+            The staff here is really supportive, teachers are great, the school
+            has a good structure. Thank you!
+          </p>
+        </div>
+        <div class="footerCenter">
+          <div class="fcHeading">Popular Courses</div>
+          <div class="fcContent">
+            <p>English for kids</p>
+            <p>Online learning</p>
+            <p>German club</p>
+            <p>Personal lessons</p>
+            <p>Group lessons</p>
+          </div>
+        </div>
+        <div class="footerRight">
+          <div class="frHeading">Get in touch</div>
+          <div class="connect">
+            <p>Send a message</p>
+            <p>Contacts</p>
+            <p>Request a call back</p>
+          </div>
+        </div>
+        <div class="frIcons">
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-facebook-square"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-linkedin"></i>
+        </div>
+      </footer>
+   
+
+    <script src="JsProject.js"></script>
+  </body>
+</html>

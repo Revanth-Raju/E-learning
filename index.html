@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lingvo English Learning e-platform</title>
+    <link rel="icon" type="image/x-icon" href="../JSAssets/group.png" />
+    
+    <!--===== Style sheet===== -->
+
+    <link rel="stylesheet" href="style1.css" />  
+
+    <!-- ===== Google fonts ===== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300&family=IBM+Plex+Mono:wght@300;400&family=Montserrat:wght@200;300;400;500;600&family=Nova+Square&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300&family=IBM+Plex+Mono:wght@300;400&family=Montserrat:wght@200;300;400;500;600&family=Nova+Square&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== Box icons link ===== -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />  
+  </head>
+
+  <body>
+    <!-- ===== Navbar ===== -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../JSAssets/Lingvo logo.png" alt="" />
+      </div>
+
+      <div class="address">
+        <div class="location">
+          <i class="bx bxs-navigation" style="color: #efac05"></i>
+          <!-- <img src="../JSAssets/placeholder.png" alt="" width="20px"> -->
+          <span>9 valley St. Brooklyn, NY 11203 </span>
+        </div>
+
+        <div class="call">
+          <i class="bx bxs-phone" style="color: #efac05"></i>
+          <!-- <img src="../JSAssets/telephone.png" alt="" width="20px"> -->
+          <span>1-800-346-6277</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== Hero section ===== -->
+
+    <div class="heroSection">
+      <div class="heroimg">
+        <img src="../JSAssets/Lingvo-bg-image-01.jpg" alt="" />
+      </div>
+
+      <div class="menu" onclick="burger(this)">
+        <div class="burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <p>Menu</p>
+
+        <div class="navLinks">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Typography</a>
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="heroContent">
+        <p>
+          <q
+            >Our language center offers group and personal lessons in English
+            and other modern languages for all ages and levels of knowledge.</q
+          >
+        </p>
+        <p>IMPROVE YOUR <span>ENGLISH</span> SKILLS</p>
+      </div>
+    </div>
+
+    <!-- ===== Course section ===== -->
+
+    <div class="course">
+      <div class="course-leftsection">
+        <div class="left-topSection">
+          <h2>Courses we offer</h2>
+          <button>SEE ALL</button>
+        </div>
+        <div class="left-bottomSection">
+          <div class="cards">
+            <div class="first-card">
+              <div class="cardimg">
+                <img src="../JSAssets/card-1.jpg" alt="" />
+              </div>
+              <div class="overlay">
+                <div class="text">
+                  <p>English for Beginners</p>
+                  <p>$25</p>
+                  <p>Price per lesson</p>
+                </div>
+              </div>
+            </div>
+            <div class="fcText">
+              <p>For Beginners</p>
+            </div>
+
+            <div class="first-card">
+              <div class="cardimg">
+                <img src="../JSAssets/card-2.jpg" alt="" />
+              </div>
+              <div class="overlay">
+                <div class="text">
+                  <p>Online learning</p>
+                  <p>$35</p>
+                  <p>Price per lesson</p>
+                </div>
+              </div>
+            </div>
+            <div class="fcText">
+              <p>Online learning</p>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="first-card">
+              <div class="cardimg">
+                <img src="../JSAssets/card-3.jpg" alt="" />
+              </div>
+              <div class="fcText"></div>
+
+              <div class="overlay">
+                <div class="text">
+                  <p>English for Business</p>
+                  <p>$40</p>
+                  <p>Price per lesson</p>
+                </div>
+              </div>
+            </div>
+            <div class="fcText">
+              <p>For business</p>
+            </div>
+
+            <div class="first-card">
+              <div class="cardimg">
+                <img src="../JSAssets/card-4.jpg" alt="" />
+              </div>
+              <div class="overlay">
+                <div class="text">
+                  <p>English for Kids</p>
+                  <p>$17</p>
+                  <p>Price per lesson</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="fcText">
+              <p>For kids</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="course-rightsection">
+        <form class="form">
+          <h2>Track your progress <i class="bx bxs-pencil"></i></h2>
+          <div class="input-container">
+            <i class="bx bxs-user"></i>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Username"
+              name="usrnm"
+            />
+          </div>
+
+          <div class="input-container">
+            <i class="bx bxs-envelope"></i>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
+
+          <div class="input-container">
+            <i class="bx bx-key"></i>
+            <input
+              class="input-field"
+              type="password"
+              placeholder="Password"
+              name="psw"
+            />
+          </div>
+          <div class="btn" >
+            <a href="progress_bar.html" target="_blank">Register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ===== Students ===== -->
+
+    <div class="students">
+      <p>LOTS OF HAPPY STUDENTS</p>
+      <p>We have over 4 thousand students</p>
+      <div class="countdown" id="countdown">
+        <button class="digit">4</button>
+        <button class="digit">1</button>
+        <button class="digit">4</button>
+        <button class="digit">5</button>
+      </div>
+    </div>
+
+    <!-- ===== Gallery ===== -->
+
+    <div class="gallery-heading"><h1>Our Gallery</h1></div>
+    <div class="gallery">
+      <div class="img-grid">
+        <div class="grid1">
+          <img src="../JSAssets/gallery-1.jpg" alt="" />
+          <img src="../JSAssets/gallery-2.jpg" alt="" />
+        </div>
+        <div class="grid1">
+          <img src="../JSAssets/gallery-3.jpg" alt="" />
+          <img src="../JSAssets/card-2.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="chooseUs">
+        <div class="chooseHeading">
+          <p>WHY CHOOSE US</p>
+        </div>
+        <div class="choose1">
+          <div class="icon"><i class="bx bx-check-square"></i></div>
+          <div class="faq">
+            <p>Quick Results</p>
+            <p>Get quick and guaranteed results with the best teachers.</p>
+          </div>
+        </div>
+        <div class="choose1">
+          <div class="icon1"><i class="bx bxs-badge-dollar"></i></div>
+          <div class="faq">
+            <p>Save Money</p>
+            <p>You can save a lot of money on our lessons & resources.</p>
+          </div>
+        </div>
+        <div class="choose1">
+          <div class="icon2"><i class="bx bx-chat"></i></div>
+          <div class="faq">
+            <p>Get Support</p>
+            <p>Our staff and teachers are always ready to help you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Community ===== -->
+
+    <div class="community">
+      <h2>JOIN OUR NEWSLETTER</h2>
+      <p>Subscribe to our newsletter to receive the latest news & updates.</p>
+      <div class="communityBtn">
+        <i class="bx bx-envelope" style="color: black"></i>
+        <input type="email" placeholder="Enter your email" />
+        <button>SEND</button>
+      </div>
+    </div>
+
+    <!-- ===== Ratings ===== -->
+
+    <div class="ratings">
+      <img src="../JSAssets/Lingvo-foreground-03-3200x620.png" alt="" />
+    </div>
+
+    <!-- ===== Footer section ===== -->
+
+    <footer class="footer">
+      <div class="footerLeft">
+        <img src="../JSAssets/Lingvo logo.png" alt="" />
+        <p>10000+ Satisfied Students</p>
+        <p>
+          The staff here is really supportive, teachers are great, the school
+          has a good structure. Thank you!
+        </p>
+      </div>
+      <div class="footerCenter">
+        <div class="fcHeading">Popular Courses</div>
+        <div class="fcContent">
+          <p>English for kids</p>
+          <p>Online learning</p>
+          <p>German club</p>
+          <p>Personal lessons</p>
+          <p>Group lessons</p>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="frHeading">Get in touch</div>
+        <div class="connect">
+          <p>Send a message</p>
+          <p>Contacts</p>
+          <p>Request a call back</p>
+        </div>
+      </div>
+      <div class="frIcons">
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-facebook-square"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-linkedin"></i>
+      </div>
+    </footer>
+
+    <!-- ===== JavaScript sheet ===== -->
+    <script src="JsProject.js"></script>
+  </body>
+</html>
